@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <title>Bigode</title>
+
+    <style>
+ h3
+ {
+   font-size: 30px !important;
+   width: 15%;
+   padding: 10px;
+   border-radius: 20px;
+ }
+ button {
+    padding: 10px;
+ }
+
+  canvas {
+	  animation-name: example;
+	  animation-duration: 4s;
+	  animation-iteration-count: infinite;
+  }
+
+
+@keyframes example {
+
+  from {box-shadow: 1px 1px 38px black;}
+  to {box-shadow: 1px 1px 38px gray;}
+
+}
+    </style>
+</head>
+<body background="bigode.webp">
+    <center>
+        <h3 class="btn btn-info">Filtro em tempo real</h3>
+        <hr>
+        <button onclick="take_snapshot()" class="btn btn-success">Tirar Foto</button>
+    </center>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <canvas></canvas>
+
+    <script src="main.js"></script>
+</body>
+</html>
